@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'noteback.apps.NotebackConfig'
+    'notelogic.apps.NotelogicConfig',
+    'rest_framework'
 ]
 
 MIDDLEWARE = [
