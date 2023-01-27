@@ -7,4 +7,3 @@ class NoteSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 
-
