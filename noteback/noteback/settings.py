@@ -39,7 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'notelogic.apps.NotelogicConfig',
     'rest_framework',
-    'corsheaders'
+    'rest_framework.authtoken',
+    'corsheaders',
+    'oauth2_provider'
 ]
 
 MIDDLEWARE = [

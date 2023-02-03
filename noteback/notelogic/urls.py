@@ -3,8 +3,10 @@ from . import views # This is the views file
 
 
 # This is the list of the routes
+
+
 urlpatterns = [
-    path('', views.getRoutes, name='routes'),
-    path('notes/', views.getNotes, name='notes'),
-    path('notes/<str:pk>/', views.getNote, name='note')
+    path('notes/', views.NoteList.as_view(), name='note-list'),
+    path('notes/<int:pk>/', views.NoteDetail.as_view(), name='note-detail')
 ]
+
