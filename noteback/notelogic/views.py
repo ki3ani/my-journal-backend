@@ -4,6 +4,7 @@ from .serializers import NoteSerializer
 
 
 
+
 class NoteList(generics.ListCreateAPIView):
     queryset = Note.objects.all().order_by('-updated')
     serializer_class = NoteSerializer
@@ -12,4 +13,6 @@ class NoteList(generics.ListCreateAPIView):
 class NoteDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = Note.objects.all()
     serializer_class = NoteSerializer
+
+
 

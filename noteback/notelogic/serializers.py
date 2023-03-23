@@ -4,10 +4,15 @@ from .models import Note # Import the Note model
 
 
 # Create a serializer class
-# This class will convert the Note model into JSON
 class NoteSerializer(serializers.ModelSerializer):
     class Meta:
+        
         model = Note
-        fields = '__all__'
+        fields = ['id', 'title', 'cover_image', 'body', 'created', 'updated']
+
+
+
+
+
 
 
